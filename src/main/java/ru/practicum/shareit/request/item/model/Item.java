@@ -16,4 +16,3 @@ public class Item {
     private Boolean available;
     private long owner;
 }
-//

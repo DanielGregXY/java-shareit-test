@@ -19,7 +19,7 @@ public class ItemServiceImpl implements ItemService {
 
     private final ItemStorage itemStorage;
     private final UserStorage userStorage;
-    //
+
     @Override
     public ItemDto create(long userId, ItemDto itemDto) {
         userStorage.getById(userId).orElseThrow(() -> {
