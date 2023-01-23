@@ -14,6 +14,6 @@ public interface UserStorage {
     UserDto create(UserDto userDto);
 
     User update(long id, User user);
-    //
+
     void delete(long id);
 }
