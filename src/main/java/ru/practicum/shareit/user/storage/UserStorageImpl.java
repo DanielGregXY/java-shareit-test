@@ -17,7 +17,7 @@ public class UserStorageImpl implements UserStorage {
     private final Map<Long, User> users = new HashMap<>();
 
     private long idCounter = 1;
-
+    //
     @Override
     public List<User> findAll() {
         return new ArrayList<>(users.values());

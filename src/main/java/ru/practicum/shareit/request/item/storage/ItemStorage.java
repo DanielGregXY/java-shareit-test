@@ -1,7 +1,7 @@
-package ru.practicum.shareit.item.storage;
+package ru.practicum.shareit.request.item.storage;
 
-import ru.practicum.shareit.item.dto.ItemDto;
-import ru.practicum.shareit.item.model.Item;
+import ru.practicum.shareit.request.item.dto.ItemDto;
+import ru.practicum.shareit.request.item.model.Item;
 
 import java.util.List;
 import java.util.Optional;
@@ -16,6 +16,6 @@ public interface ItemStorage {
     List<ItemDto> searchItem(String text);
 
     ItemDto create(long userId, ItemDto itemDto);
-
+    //
     ItemDto update(long userId, long itemId, Item item);
 }

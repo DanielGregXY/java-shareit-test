@@ -1,13 +1,13 @@
-package ru.practicum.shareit.item.service;
+package ru.practicum.shareit.request.item.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ru.practicum.shareit.exeption.ObjectNotFoundException;
-import ru.practicum.shareit.item.dto.ItemDto;
-import ru.practicum.shareit.item.model.Item;
-import ru.practicum.shareit.item.storage.ItemStorage;
+import ru.practicum.shareit.request.item.dto.ItemDto;
+import ru.practicum.shareit.request.item.model.Item;
+import ru.practicum.shareit.request.item.storage.ItemStorage;
 import ru.practicum.shareit.user.storage.UserStorage;
 import java.util.Collections;
 import java.util.List;
@@ -19,7 +19,7 @@ public class ItemServiceImpl implements ItemService {
 
     private final ItemStorage itemStorage;
     private final UserStorage userStorage;
-
+    //
     @Override
     public ItemDto create(long userId, ItemDto itemDto) {
         userStorage.getById(userId).orElseThrow(() -> {
