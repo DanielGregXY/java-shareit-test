@@ -18,7 +18,7 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
     private final UserStorage repository;
-
+//
     @Override
     public List<User> findAll() {
         log.info("Пользователи отправлены");

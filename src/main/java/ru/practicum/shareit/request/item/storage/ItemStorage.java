@@ -16,6 +16,6 @@ public interface ItemStorage {
     List<ItemDto> searchItem(String text);
 
     ItemDto create(long userId, ItemDto itemDto);
-
+//
     ItemDto update(long userId, long itemId, Item item);
 }
